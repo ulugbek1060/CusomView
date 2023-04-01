@@ -6,4 +6,4 @@ The following image shows a part of the basic widget hierarchy:
 
 <img src="https://github.com/ulugbek1060/CusomView/blob/main/src/Basic-Android-Widget-Hierarchy-1.png?raw=true">
 
-example: https://www.kodeco.com/142-android-custom-view-tutorial
+tutorial: https://www.kodeco.com/142-android-custom-view-tutorial
