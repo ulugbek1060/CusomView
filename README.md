@@ -8,4 +8,5 @@ The following image shows a part of the basic widget hierarchy:
 
 tutorials: 
 https://www.kodeco.com/142-android-custom-view-tutorial
+
 https://www.vogella.com/tutorials/AndroidCustomViews/article.html
