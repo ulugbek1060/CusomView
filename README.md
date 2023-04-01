@@ -11,3 +11,5 @@ tutorials:
 https://www.kodeco.com/142-android-custom-view-tutorial
 
 https://www.vogella.com/tutorials/AndroidCustomViews/article.html
+
+https://www.vogella.com/tutorials/AndroidTouch/article.html#singletouch
