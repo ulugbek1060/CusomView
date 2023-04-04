@@ -5,4 +5,9 @@
         <attr name="valueColor" format="color" />
     </declare-styleable>
 
+    <declare-styleable name="CustomSwitch">
+        <attr name="cs_subtitle" format="string"/>
+        <attr name="android:title"/>
+        <attr name="android:checked" />
+    </declare-styleable>
 </resources>

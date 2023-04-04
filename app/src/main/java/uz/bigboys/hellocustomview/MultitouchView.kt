@@ -13,8 +13,7 @@ import android.view.View
 
 
 class MultitouchView @JvmOverloads constructor(
-   context: Context,
-   attrs: AttributeSet
+   context: Context, attrs: AttributeSet
 ) : View(context, attrs) {
 
    private val SIZE = 60
@@ -22,9 +21,16 @@ class MultitouchView @JvmOverloads constructor(
    private var activePointers: SparseArray<PointF> = SparseArray()
    private var paint: Paint = Paint(Paint.ANTI_ALIAS_FLAG)
    private val colors = intArrayOf(
-      Color.BLUE, Color.GREEN, Color.MAGENTA,
-      Color.BLACK, Color.CYAN, Color.GRAY, Color.RED, Color.DKGRAY,
-      Color.LTGRAY, Color.YELLOW
+      Color.BLUE,
+      Color.GREEN,
+      Color.MAGENTA,
+      Color.BLACK,
+      Color.CYAN,
+      Color.GRAY,
+      Color.RED,
+      Color.DKGRAY,
+      Color.LTGRAY,
+      Color.YELLOW
    )
 
    private var textPaint: Paint = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -47,8 +53,7 @@ class MultitouchView @JvmOverloads constructor(
       // get masked (not specific to a pointer) action
 
       when (event.actionMasked) {
-         MotionEvent.ACTION_DOWN,
-         MotionEvent.ACTION_POINTER_DOWN -> {
+         MotionEvent.ACTION_DOWN, MotionEvent.ACTION_POINTER_DOWN -> {
             val f = PointF()
             f.x = event.getX(pointerIndex)
             f.y = event.getY(pointerIndex)
@@ -66,9 +71,7 @@ class MultitouchView @JvmOverloads constructor(
                i++
             }
          }
-         MotionEvent.ACTION_UP,
-         MotionEvent.ACTION_POINTER_UP,
-         MotionEvent.ACTION_CANCEL -> {
+         MotionEvent.ACTION_UP, MotionEvent.ACTION_POINTER_UP, MotionEvent.ACTION_CANCEL -> {
             activePointers.remove(pointerId)
          }
       }
