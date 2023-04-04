@@ -16,5 +16,7 @@ class MainActivity : AppCompatActivity() {
       binding.view2.setOnClickListener {
          binding.view2.setImageVisible(!binding.view2.imageVisibility)
       }
+
+
    }
 }
